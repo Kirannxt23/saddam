@@ -499,6 +499,38 @@
                 grid-template-columns: 1fr !important;
                 gap: 20px !important;
             }
+
+            .qualification-table thead {
+                display: none;
+            }
+
+            .qualification-table, .qualification-table tbody, .qualification-table tr, .qualification-table td {
+                display: block;
+                width: 100%;
+            }
+
+            .qualification-table tr {
+                background: #cffafe;
+                margin-bottom: 15px;
+                border-radius: 8px;
+                padding: 15px;
+                border-left: 4px solid #06b6d4;
+            }
+
+            .qualification-table td {
+                text-align: left;
+                padding: 8px 0;
+                border: none;
+                display: grid;
+                grid-template-columns: 140px 1fr;
+                gap: 10px;
+            }
+
+            .qualification-table td:before {
+                content: attr(data-label);
+                font-weight: bold;
+                color: #0891b2;
+            }
         }
     </style>
 </head>
@@ -646,64 +678,64 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>10th</td>
-                            <td>Ajmer Board, Rajasthan</td>
-                            <td>2008</td>
-                            <td>58%</td>
+                            <td data-label="Examination: ">10th</td>
+                            <td data-label="Board/University: ">Ajmer Board, Rajasthan</td>
+                            <td data-label="Year: ">2008</td>
+                            <td data-label="Percentage: ">58%</td>
                         </tr>
                         <tr>
-                            <td>12th</td>
-                            <td>Ajmer Board, Rajasthan</td>
-                            <td>2010</td>
-                            <td>65%</td>
+                            <td data-label="Examination: ">12th</td>
+                            <td data-label="Board/University: ">Ajmer Board, Rajasthan</td>
+                            <td data-label="Year: ">2010</td>
+                            <td data-label="Percentage: ">65%</td>
                         </tr>
                         <tr>
-                            <td>B.COM</td>
-                            <td>MGSU, Bikaner</td>
-                            <td>2013</td>
-                            <td>65%</td>
+                            <td data-label="Examination: ">B.COM</td>
+                            <td data-label="Board/University: ">MGSU, Bikaner</td>
+                            <td data-label="Year: ">2013</td>
+                            <td data-label="Percentage: ">65%</td>
                         </tr>
                         <tr>
-                            <td>M.COM</td>
-                            <td>MGSU, Bikaner</td>
-                            <td>2015</td>
-                            <td>55%</td>
+                            <td data-label="Examination: ">M.COM</td>
+                            <td data-label="Board/University: ">MGSU, Bikaner</td>
+                            <td data-label="Year: ">2015</td>
+                            <td data-label="Percentage: ">55%</td>
                         </tr>
                         <tr>
-                            <td>MBA</td>
-                            <td>JJTU, Jhunjhunu</td>
-                            <td>2015</td>
-                            <td>78%</td>
+                            <td data-label="Examination: ">MBA</td>
+                            <td data-label="Board/University: ">JJTU, Jhunjhunu</td>
+                            <td data-label="Year: ">2015</td>
+                            <td data-label="Percentage: ">78%</td>
                         </tr>
                         <tr>
-                            <td>PHD</td>
-                            <td>JJTU, Jhunjhunu</td>
-                            <td>2018</td>
-                            <td>74%</td>
+                            <td data-label="Examination: ">PHD</td>
+                            <td data-label="Board/University: ">JJTU, Jhunjhunu</td>
+                            <td data-label="Year: ">2018</td>
+                            <td data-label="Percentage: ">74%</td>
                         </tr>
                         <tr>
-                            <td>LLB</td>
-                            <td>JJTU, Jhunjhunu</td>
-                            <td>2024</td>
-                            <td>65%</td>
+                            <td data-label="Examination: ">LLB</td>
+                            <td data-label="Board/University: ">JJTU, Jhunjhunu</td>
+                            <td data-label="Year: ">2024</td>
+                            <td data-label="Percentage: ">65%</td>
                         </tr>
                         <tr>
-                            <td>MA (Economics)</td>
-                            <td>KSOU, Karnataka</td>
-                            <td>2025</td>
-                            <td>60%</td>
+                            <td data-label="Examination: ">MA (Economics)</td>
+                            <td data-label="Board/University: ">KSOU, Karnataka</td>
+                            <td data-label="Year: ">2025</td>
+                            <td data-label="Percentage: ">60%</td>
                         </tr>
                         <tr>
-                            <td>LLM</td>
-                            <td>JJTU, Jhunjhunu</td>
-                            <td>Pursuing</td>
-                            <td>-</td>
+                            <td data-label="Examination: ">LLM</td>
+                            <td data-label="Board/University: ">JJTU, Jhunjhunu</td>
+                            <td data-label="Year: ">Pursuing</td>
+                            <td data-label="Percentage: ">-</td>
                         </tr>
                         <tr>
-                            <td>PG DIPLOMA</td>
-                            <td>KSOU, Karnataka</td>
-                            <td>Pursuing</td>
-                            <td>-</td>
+                            <td data-label="Examination: ">PG DIPLOMA</td>
+                            <td data-label="Board/University: ">KSOU, Karnataka</td>
+                            <td data-label="Year: ">Pursuing</td>
+                            <td data-label="Percentage: ">-</td>
                         </tr>
                     </tbody>
                 </table>
