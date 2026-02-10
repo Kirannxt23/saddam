@@ -66,14 +66,26 @@
         }
 
         .profile-image {
-            width: 150px;
-            height: 150px;
+            width: 200px;
+            height: 200px;
             border-radius: 50%;
             border: 5px solid white;
-            margin-bottom: 20px;
             object-fit: cover;
             position: relative;
             z-index: 10;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 40px;
+            align-items: center;
+            position: relative;
+            z-index: 10;
+        }
+
+        .hero-text {
+            text-align: left;
         }
 
         .header h1 {
@@ -457,6 +469,17 @@
                 padding: 40px 20px;
             }
 
+            .hero-content {
+                grid-template-columns: 1fr !important;
+                text-align: center;
+                gap: 20px;
+                justify-items: center;
+            }
+
+            .hero-text {
+                text-align: center !important;
+            }
+
             .content {
                 padding: 20px;
             }
@@ -539,10 +562,14 @@
     <div class="container">
         <!-- Header Section -->
         <div class="header">
-            <!-- <img src="minds logo b.svg" alt="Dr. Saddam Hussain" class="profile-image"> -->
-            <h1>Dr. Saddam Hussain</h1>
-            <h2>Finance & Operations Manager</h2>
-            <h3>Minds NXT Techno Vision Pvt Ltd</h3>
+            <div class="hero-content">
+                <img src="IMG_1098.JPG" alt="Dr. Saddam Hussain" class="profile-image">
+                <div class="hero-text">
+                    <h1>Dr. Saddam Hussain</h1>
+                    <h2>Finance & Operations Manager</h2>
+                    <h3>Minds NXT Techno Vision Pvt Ltd</h3>
+                </div>
+            </div>
             
             <p>Strategically-minded Finance Professional with 7 years of proven success in financial reporting and project management. Highly skilled at increasing company revenue and productivity through detailed cost analysis. Excels in high-pressure environments.</p>
             
